@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
 .container-fluid {
     min-width: 500px !important;
 }
@@ -14,13 +22,17 @@ header#logo {
     left: 0;
     min-width: 300px;
     height: 100%;
+    z-index: 10;
 }
 
 #navbar ul {
     height: calc(100% - 50px);
     overflow-x: hidden;
     overflow-y: auto;
-    font-size: 25px;
+}
+
+.list-group-item {
+    padding: 0;
 }
 
 #main-doc {
@@ -58,44 +70,11 @@ section .highlight {
     background-color: #333;
 }
 
-pre {
-    padding-top: 16px;
+code {
+    display: block;
+    margin-bottom: 10px;
+    white-space: pre;
     background-color: rgb(238, 238, 238); 
 }
-
-
-
-/* .sidebar { 
-    height: 100%;
-    overflow-y: auto;
-    z-index: 1;
-}
-
-.navbar {
-    position: relative;
-    top: 50px;
-    left: 0;
-    
-}
-
-
-
-
-.sidebar,
-.logo {
-    position: fixed;
-    min-width: 250px;
-    left: 0;
-}
-
-.logo { 
-    top: 0;
-    height: 50px;
-    z-index: 2;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-} */
-
 
 
